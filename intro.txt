@@ -1,0 +1,5 @@
+git init = initialization of repository / source control->initialize repository
+git add = to save file in local / + symbol in changes in source control
+git commit -a -m "how to add file in repository" = to commit
+remote->add remote->provide repository link -> origin
+git push origin master = to push
