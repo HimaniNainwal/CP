@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&family=Source+Code+Pro&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
 
+.container{
+    display: flex;/*sets how a flex item will grow or shrink to fit the space available in its flex container*/
+}
+
 .sidebar{
-    background-color: purple;
-    width: 20vw;
-    font-family: 'Fira Sans' , sans-serif , 'Barlow';
+    background-color: black;
+    width: 434px;
+    font-family: 'Barlow', sans-serif; 
+    
 }
 
 .sidebar nav{
@@ -18,13 +24,78 @@
 .sidebar nav li{
     list-style: none;
     font-size: 30px;
+    padding: 30px 0;
+    color: white;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
 }
 
 .main{
-    background-color: silver;
-    width: 80vw;
+    background-color: grey;
+    width: 90vw;
+    height: 100vh;
 }
 
-.container{
+.infoContainer{
+    background-color:whitesmoke;
+    height:75vh;
+    width: 65vw;
+    margin: 90px auto;
     display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 85px;
+}
+
+.name{
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Barlow', sans-serif;
+}
+
+.about{
+    font-size: 22px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.moreabout{
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.buttons{
+    margin-top: 30px;
+}
+
+.buttons button{
+    padding: 10px 10px;
+    border-radius: 40px;
+    color: black;
+    background-color: green;
+    font-weight: bold;
+    font-size: 21px;
+    margin:0 3 px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    color: black;
+    background-color: white;
+}
+
+.devpic  img{
+    width: 300px;
 }
