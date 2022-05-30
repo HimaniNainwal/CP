@@ -80,7 +80,7 @@
     margin-top: 30px;
 }
 
-.buttons button{
+.btn{
     padding: 10px 10px;
     border-radius: 40px;
     color: black;
@@ -91,11 +91,58 @@
     cursor: pointer;
 }
 
-.buttons button:hover{
+.btn-sm{        /*sm-small*/
+    font-size: 17px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+
+.btn:hover{
     color: black;
     background-color: white;
 }
 
 .devpic  img{
     width: 300px;
+}
+
+.contactform{
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /*text-align: center;*/
+    padding: 12px 0;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    width: 26vw;
+    border-radius:5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 1px 0 0 0;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 30px;
+    margin: 3px 0;
 }
