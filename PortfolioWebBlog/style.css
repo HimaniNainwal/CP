@@ -8,13 +8,16 @@
 
 .container{
     display: flex;/*sets how a flex item will grow or shrink to fit the space available in its flex container*/
+    background-color:whitesmoke;
 }
 
 .sidebar{
+    position: absolute;
     background-color: black;
-    width: 434px;
     font-family: 'Barlow', sans-serif; 
-    
+    height: 100vh;
+    width: 23vw;
+    transition: transform ease-in;
 }
 
 .sidebar nav{
@@ -35,12 +38,11 @@
 
 .main{
     background-color: grey;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 
 .infoContainer{
-    background-color:whitesmoke;
     height:75vh;
     width: 65vw;
     margin: 90px auto;
@@ -146,3 +148,79 @@
     width: 30px;
     margin: 3px 0;
 }
+
+.intro{
+    height:75vh;
+    width: 65vw;
+    margin: 90px auto;
+}
+
+.intro h2{
+    font-family: 'Barlow', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding: 12px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+
+.fifty{
+    width: 125px;
+    background-color: green;
+}
+
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 260px;
+}
+
+/* .devpic{ 
+    display: none;
+}*/
+
+/*@media (max-width: 1615px) {
+    .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+}*/

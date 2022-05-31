@@ -1,0 +1,3 @@
+ctrl + / --> comment
+alt + up/down arrow key --> move the line up/down
+ctrl + alt + down arrow key --> multiple cursor
